@@ -1,0 +1,67 @@
+.leaflet-container{
+    background-color: rgb(81, 112, 150);
+}
+.searchBox{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.searchBox>input{
+    padding:10px;
+    width: 30%; 
+}
+.countryName{
+    text-align: center;
+    width:100%;
+}
+.detailListDiv{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    box-shadow: -6px 6px 9px #54544a;
+    border-radius: 36px;
+    padding: 15px;
+    background-color: rgb(188, 199, 204);
+}
+.detailList{
+    list-style-type: none;
+    padding: 0;
+}
+
+.detailList>li{
+    display: flex;
+    margin: 5px 0;
+}
+.detailList>li>strong{
+    width:100px
+}
+.lang{
+    background-color: green;
+    color:white;
+    padding:2px 5px;
+    border-radius: 5px;
+}
+
+.errorBox{
+    position: absolute;
+    top: 10%;
+    left:50%;
+    background-color: rgb(232, 42, 42);
+    color:white;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 15px;
+    z-index: 10000;
+}
+
+
+@media screen and (min-width:700px){
+    .detailListDiv{
+        position:absolute;
+        right:0;
+        top:20%;
+        z-index: 5;
+        z-index: 1000;
+    }
+}
